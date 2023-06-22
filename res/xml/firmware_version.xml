@@ -22,10 +22,15 @@
     settings:keywords="@string/keywords_android_version">
 
     <!-- crDroid logo -->
-    <PreferenceScreen
+    <!--<PreferenceScreen
         android:layout="@layout/crdroid_logo"
         android:key="crdroid_logo"
-        android:selectable="false" />
+        android:selectable="false" />-->
+
+    <!--ArbitrarilyTong logo-->
+    <PreferenceScreen
+        android:layout="@layout/tong_android_version_banner"
+        android:key="tong_android_version_banner" />
 
     <!-- Device name -->
     <Preference
