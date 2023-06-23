@@ -25,7 +25,7 @@ class AboutDevice : FrameLayout {
     init {
         inflate(context, R.layout.device_info, this)
         // ROM Version
-        val version = SystemProperties.get("ro.lineage.version")
+        val version = SystemProperties.get("ro.crdroid.build.version")
 
          findViewById<TextView>(R.id.romVersion).text = (version).toString()
 
