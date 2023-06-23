@@ -38,6 +38,10 @@ import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnCreate;
 import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 
+import com.android.settingslib.widget.LayoutPreference;
+
+import kotlin.Unit;
+
 public class DeviceNamePreferenceController extends BasePreferenceController
         implements Preference.OnPreferenceChangeListener,
         LifecycleObserver,
@@ -50,7 +54,8 @@ public class DeviceNamePreferenceController extends BasePreferenceController
     protected WifiManager mWifiManager;
     private final BluetoothAdapter mBluetoothAdapter;
     private final WifiDeviceNameTextValidator mWifiDeviceNameTextValidator;
-    private ValidatedEditTextPreference mPreference;
+    private LayoutPreference mPreference;
+    private AboutDevice mDeviceCard;
     private DeviceNamePreferenceHost mHost;
     private String mPendingDeviceName;
 
