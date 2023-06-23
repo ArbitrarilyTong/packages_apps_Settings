@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entity_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6sp">
+
+    <FrameLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/tong_banner_shape"
+        android:minHeight="150dp">
+
+        <LinearLayout
+            android:id="@+id/small_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:orientation="horizontal">
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginLeft="225dp"
+                android:layout_marginBottom="135dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arbitrarilytong_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shape3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|center|center_horizontal"
+            android:orientation="vertical">
+            >
+
+            <ImageView
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|clip_horizontal|center"
+                android:layout_marginTop="85dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tong_banner_shape3" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
